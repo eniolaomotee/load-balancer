@@ -35,3 +35,6 @@ CMD ["python3.10", "main.py"]
 # COPY books/ books/
 
 # CMD ["python", "main.py"]
+
+# resource limiting example
+# docker run -d --cpus="0.25" --name cpu-stress alexeiled/stress-ng --cpu 2 --timeout 10m
